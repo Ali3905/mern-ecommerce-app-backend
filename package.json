@@ -1,0 +1,24 @@
+{
+    "homepage": "https://Ali3905.github.io/e-shopper-backend-",
+    "name": "backend",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": " \"npm start\" "
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "cors": "^2.8.5",
+        "express": "^4.18.2",
+        "gh-pages": "^5.0.0",
+        "jsonwebtoken": "^9.0.0",
+        "mongodb": "^5.1.0",
+        "mongoose": "^6.10.0",
+        "nodemon": "^2.0.20",
+        "path": "^0.12.7"
+    }
+}
