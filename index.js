@@ -23,8 +23,8 @@ app.get("/home", (req, res) => {
   app.get("/getItems", async(req, res)=>{
     
     try {
-        const items = await item.find({})
-        res.send({"hlo": "hlo", items})
+        // const items = await item.find({})
+        res.send("hlo")
     } catch (error) {
         res.status(500).send("Something went Wrong")
     }
