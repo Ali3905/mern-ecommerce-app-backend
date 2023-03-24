@@ -1,5 +1,4 @@
 const express = require("express")
-const fetchuser = require("../middleware/fetchuser")
 const router = express.Router()
 const item = require("../models/items")
 
@@ -8,7 +7,7 @@ router.get("/getItems", async(req, res)=>{
     
     try {
         const Items = await item.find({})
-        res.send({"hlo": "hlo", Items})
+        res.send(Items)
     } catch (error) {
         res.status(500).send("Something went Wrong")
     }
