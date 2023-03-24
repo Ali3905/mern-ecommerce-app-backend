@@ -7,6 +7,7 @@ const item = require("../models/items")
 router.get("/getItems", async(req, res)=>{
     
     try {
+        console.log("hlo")
         const Items = await item.find({})
         res.send(Items)
     } catch (error) {
