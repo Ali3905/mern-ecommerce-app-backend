@@ -7,7 +7,11 @@ router.get("/getItems", async(req, res)=>{
     
     try {
         const Items = await item.find({})
-        res.send(Items)
+        if (Items.length===0) {
+            res.send("No Items to show")
+        } else {
+            res.send(Items)
+        }
     } catch (error) {
         res.status(500).send("Something went Wrong")
     }
