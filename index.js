@@ -15,7 +15,7 @@ app.use("/api", require("./routes/address"))
 app.use("/api", require("./routes/order"))
 app.use("/api", require("./routes/user"))
 
-app.get("/", (req, res) => {
+app.get("/home", (req, res) => {
     res.send("Home page");
   });
 
